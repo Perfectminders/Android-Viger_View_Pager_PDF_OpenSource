@@ -54,6 +54,7 @@ public class RestClient  {
             Retrofit client = new Retrofit.Builder()
                     .client(okclient)
                     .addConverterFactory(GsonConverterFactory.create())
+                    .baseUrl("https://google.com/")
                     .build();
             ApiInterface = client.create(ApiInterface.class);
 
